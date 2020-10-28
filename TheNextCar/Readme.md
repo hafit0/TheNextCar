@@ -7,5 +7,5 @@ project untuk belajar implementasi MVC
 
 
 ## Jawaban Tugas
-
+1. ![Class diagram](https://github.com/hafit0/TheNextCar/blob/master/ClassDiagram1.png)
 
