@@ -6,18 +6,20 @@
         xmlns:local="clr-namespace:TheNextCar"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="624">
-    <Grid>
+    <Grid Background="Black">
         <Button x:Name="StartButton" Content="STOPPED" HorizontalAlignment="Left" Margin="40,353,0,0" VerticalAlignment="Top" Click="OnStartButtonClicked" Width="79"/>
-        <Button x:Name="AccuButton" Content="ON" HorizontalAlignment="Left" Margin="465,353,0,0" VerticalAlignment="Top" Width="82" Click="OnAccuButtonClicked" RenderTransformOrigin="0.5,0.5">
-            
-        </Button>
-        <Button x:Name="LockDoorButton" Content="LOCKED" HorizontalAlignment="Left" Margin="163,353,0,0" VerticalAlignment="Top" Click="OnLockDoorButtonClicked" Width="89"/>
+        <Button x:Name="AccuButton" Content="ON" HorizontalAlignment="Left" Margin="465,353,0,0" VerticalAlignment="Top" Width="82" Click="OnAccuButtonClicked" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="LockDoorButton" Content="LOCKED" HorizontalAlignment="Left" Margin="163,353,0,0" VerticalAlignment="Top" Click="OnLockDoorButtonClicked" Width="89" />
         <Button x:Name="DoorOpenButton" Content="CLOSED" HorizontalAlignment="Left" Margin="309,353,0,0" VerticalAlignment="Top" Click="OnDoorOpenButtonClicked" Width="87"/>
-        <Label x:Name="status" Content="Engine Started" HorizontalAlignment="Left" Margin="32,376,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="AccuState" Content="Power is ON" HorizontalAlignment="Left" Margin="465,376,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LockDoorState" Content="Door is Locked" HorizontalAlignment="Left" Margin="163,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.156"/>
-        <Label x:Name="DoorOpenState" Content="Door is Closed" HorizontalAlignment="Left" Margin="309,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.862,0.923"/>
+        <Label x:Name="status" Content="Engine Started" HorizontalAlignment="Left" Margin="32,376,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="AccuState" Content="Power is ON" HorizontalAlignment="Left" Margin="465,376,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="LockDoorState" Content="Door is Locked" HorizontalAlignment="Left" Margin="163,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.156" Foreground="White"/>
+        <Label x:Name="DoorOpenState" Content="Door is Closed" HorizontalAlignment="Left" Margin="309,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.862,0.923" Foreground="White"/>
         <Image HorizontalAlignment="Center" Height="348" VerticalAlignment="Top" Width="557" Source="/Assets/navigation.jpg"/>
+        <Label Content="126" HorizontalAlignment="Left" Margin="32,232,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold"/>
+        <Label Content="KM/h" HorizontalAlignment="Left" Margin="55,284,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="45" HorizontalAlignment="Left" Margin="508,228,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold"/>
+        <Label Content="x 100 rpm" HorizontalAlignment="Left" Margin="507,280,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
 
     </Grid>
 </Window>
